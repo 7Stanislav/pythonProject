@@ -9,7 +9,7 @@
 n + nn + nnn = 369
 """
 
-num = (input("Введите целое положительное число: "))
+num = input("Введите целое положительное число: ")
 first = int(num)
 second = num + num
 third = num + num + num
