@@ -22,7 +22,7 @@
 rev = int(input("Введите выручку фирмы: "))
 exp = int(input("Введите издержки фирмы: "))
 res = rev - exp
-res_lesion = (exp - rev)
+res_lesion = exp - rev
 
 if rev > exp:
     print(f'Финансовый результат - прибыль. Ее величина: {res}')
@@ -31,6 +31,8 @@ if rev > exp:
     num = int(input("Введите численность сотрудников фирмы: "))
     res_man = res / num
     print(f'Прибыль фирмы в расчете на одного сотрудника = {res_man}')
+elif rev == exp:
+    print('Финансовый результат = 0')
 else:
     print(f'Финансовый результат - убыток. Его величина: {res_lesion}')
 
